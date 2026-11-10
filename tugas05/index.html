@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Finder</title>
+    <link rel="stylesheet" href="tugas.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GitHub Profile Finder</h1>
+        <p>Cari profil pengguna GitHub</p>
+
+        <form id="searchForm">
+            <input type="text" id="username" placeholder="Masukkan username..." required>
+            <button type="submit">Cari</button>
+        </form>
+
+        <p id="message"></p>
+
+        <div id="profile" class="hidden">
+            <img id="avatar" alt="Avatar">
+            <h2 id="name"></h2>
+            <p id="bio"></p>
+            <p>Public Repositories: <strong id="repos"></strong></p>
+            <a id="profileLink" target="_blank" rel="noopener noreferrer">Lihat Profil GitHub</a>
+        </div>
+    </div>
+
+    <script src="tugas.js"></script>
+</body>
+</html>
